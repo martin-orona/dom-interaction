@@ -6,5 +6,10 @@ function modifyButton(selector) {
   console.log("modified element content from [" + initial + "] to [" + final + "]");
 }
 
-modifyButton("#gatewayButtonDiv > a");
-setTimeout(function() { modifyButton("#gatewayButtonDiv > a"); }, 1000);
+//modifyButton("#gatewayButtonDiv > a");
+console.log("prepping call");
+setTimeout(function() {
+  console.log("modifying");
+  modifyButton("#gatewayButtonDiv > a");
+  console.log("modified");
+}, 1000);
