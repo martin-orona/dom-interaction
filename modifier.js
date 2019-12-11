@@ -7,3 +7,4 @@ function modifyButton(selector) {
 }
 
 modifyButton("#gatewayButtonDiv > a");
+setTimeout(function() { modifyButton("#gatewayButtonDiv > a"); }, 1000);
